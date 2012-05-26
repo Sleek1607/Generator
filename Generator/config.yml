@@ -1,0 +1,5 @@
+# CUBE CONFIG VALUES
+# What block the cube is made of
+ cubeMat: 1
+# Cube Length
+ cubeL: 5

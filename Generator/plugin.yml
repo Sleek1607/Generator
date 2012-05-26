@@ -1,0 +1,7 @@
+name: Generator
+main: me.JamieSinn.Generator.Generator
+version: 1.0
+description: Generator for buildings.
+commands:
+  gcube:
+    description:
