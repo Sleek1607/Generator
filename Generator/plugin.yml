@@ -1,7 +1,10 @@
 name: Generator
 main: me.JamieSinn.Generator.Generator
 version: 1.0
+author: JamieSinn
 description: Generator for buildings.
 commands:
   gcube:
-    description:
+    description: Generates a cube
+  ghcube:
+    description: Generates a hollow cube

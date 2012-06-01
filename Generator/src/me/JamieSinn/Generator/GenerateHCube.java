@@ -8,11 +8,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GenerateCube extends Generator
-{
-	
-	
-	public void generateCube(Location point, int length)
+public class GenerateHCube extends Generator
+{	
+	public void generateHCube(Location point, int length)
 	{  
 		World world = point.getWorld();
 
@@ -31,7 +29,7 @@ public class GenerateCube extends Generator
 					for(int z_operate = z_start; z_operate <= z_length; z_operate++)
 					{
 						Block blockToChange = world.getBlockAt(x_operate,y_operate,z_operate); 
-						blockToChange.setTypeId(getConfig().getInt("cubeMat"));    				
+						blockToChange.setTypeId(getConfig().getInt("hcubeMat"));    				
 					}
 	
 				}
@@ -45,18 +43,13 @@ public class GenerateCube extends Generator
 		if (sender instanceof Player) {
 			player = (Player) sender;
 		}
-		if(commandLabel.equalsIgnoreCase("gcube"))
+		if(commandLabel.equalsIgnoreCase("ghcube"))
 		{
-		//	cubeList.add(cubeList);
-			int length = getConfig().getInt("cubeL");
+	
+			int length = getConfig().getInt("hcubeL");
 			Location point = player.getLocation();
-			this.generateCube(point, length);
-
-		}
-		if(commandLabel.equalsIgnoreCase("undocube"))
-		{
-     //		cubeList.remove(cubeList);
-			player.sendMessage(ChatColor.RED + "Cube Removed");
+			this.generateHCube(point, length);
+			player.sendMessage(Prefix + Text + ChatColor.RED + "Cube");
 		}
 		return false;
 	}

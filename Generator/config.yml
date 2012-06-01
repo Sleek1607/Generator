@@ -3,3 +3,8 @@
  cubeMat: 1
 # Cube Length
  cubeL: 5
+# HOLLOW CUBE CONFIG VALUES
+# What block the hollow cube is made of
+ hcubeMat: 1
+# Hollow Cube Length
+ hcubeL: 5
