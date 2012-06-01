@@ -39,10 +39,9 @@ public class GenerateCube extends Generator
 	}
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
-		Player player = null;
-		if (sender instanceof Player) {
-			player = (Player) sender;
-		}
+		Player player = (Player) sender;
+
+		
 		if(commandLabel.equalsIgnoreCase("gcube"))
 		{
 		//	cubeList.add(cubeList);
