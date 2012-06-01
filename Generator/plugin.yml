@@ -1,6 +1,6 @@
 name: Generator
 main: me.JamieSinn.Generator.Generator
-version: 1.0
+version: 1.1
 author: JamieSinn
 description: Generator for buildings.
 commands:

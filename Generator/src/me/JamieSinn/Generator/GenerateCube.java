@@ -10,8 +10,6 @@ import org.bukkit.entity.Player;
 
 public class GenerateCube extends Generator
 {
-	
-	
 	public void generateCube(Location point, int length)
 	{  
 		World world = point.getWorld();
